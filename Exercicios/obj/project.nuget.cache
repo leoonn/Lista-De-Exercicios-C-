@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hCUWQniMuIfUKsvxTS9Cb3bpZLCbdJo4oLR8km2nJR0yWoJW1PbU2NJajnUS2yu1oiW7qcBPGZX4c3I3R+rhhg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USERS\\source\\repos\\Exercicios\\Exercicios\\Exercicios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USERS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\USERS\\.nuget\\packages\\unity\\5.11.10\\unity.5.11.10.nupkg.sha512"
+  ],
+  "logs": []
+}
