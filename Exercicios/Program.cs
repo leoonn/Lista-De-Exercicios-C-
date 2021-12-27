@@ -4,7 +4,8 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Exercicios.Entities.AbstractExercise;
+using Exercicios.Entities.AbstractExercise.Q1;
+using Exercicios.Entities.AbstractExercise.Q2;
 using Exercicios.Entities.ExerciseProducts;
 
 
@@ -14,7 +15,7 @@ namespace Exercises
     {
         static void Main()
         {
-            new Exercise().Exercise7();
+            new Exercise().Exercise8();
         }
     }
     class Exercise
@@ -330,7 +331,7 @@ namespace Exercises
 
         }
 
-        public void Exercise5() //exercicio simples para entendimento de classe abstract
+        public void Exercise5() //exercicio para reforçar conceitos de classe abstract
         {
             Console.WriteLine("Digite a cor do retangulo");
             string color = Console.ReadLine();
@@ -343,16 +344,16 @@ namespace Exercises
             double result = rec.Area();
             Console.WriteLine(result + color);
         }
-        public void Exercise6() //exercicio simples para entendimento de classe abstract
+        public void Exercise6() //exercicio para reforçar conceitos de classe abstract
         {
             Console.WriteLine("Digite a cor do circulo");
             string color = Console.ReadLine();
-            Console.WriteLine("Digite o valor da area total do circulo");
+            Console.WriteLine("Digite o valor do raio total do circulo");
             double radius = double.Parse(Console.ReadLine());
 
             Circle circle = new Circle(radius, color);
             double result = circle.Area();
-            Console.WriteLine(result + " " + color);
+            Console.WriteLine(result.ToString("F2", CultureInfo.InvariantCulture) + " " + color);
         }
         public void Exercise7()
         {
@@ -393,6 +394,42 @@ namespace Exercises
             {
                 Console.WriteLine(item.PriceTag());
             }
+        }  //Exercicio simples para reforçar conceitos de polimorfismo
+        public void Exercise8() {
+            List<Contribuinte> list = new List<Contribuinte>();
+            Console.WriteLine("Enter the number of tax payers: ");
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine($"Tax payer #{i} data: ");
+                Console.WriteLine("Individual or company:  i/c");
+                char ch = char.Parse(Console.ReadLine());
+                Console.WriteLine("Enter with payer name");
+                string Name = Console.ReadLine();
+                Console.WriteLine("Enter with Income");
+                double income = double.Parse(Console.ReadLine());
+                if(ch ==  'i')
+                {
+                    Console.WriteLine("Enter with health spends");
+                    double spend = double.Parse(Console.ReadLine());
+                    list.Add(new PessoaFisica(Name, income, spend));
+                }
+                else
+                {
+                    Console.WriteLine("Enter with number of employees");
+                    int emp = int.Parse(Console.ReadLine());
+                    list.Add(new PessoaJuridica(Name, income, emp));
+                }
+            }
+
+            Console.WriteLine("Payers: ");
+            double total = 0;
+            foreach (Contribuinte item in list)
+            {
+                Console.WriteLine(item.Name  +" $" +  item.Calculate().ToString("F2"), CultureInfo.InvariantCulture );
+                total += item.Calculate();
+            }
+            Console.WriteLine("total payment" +  total);
         }
     }
 }
