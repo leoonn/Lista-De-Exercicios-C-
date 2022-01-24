@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hCUWQniMuIfUKsvxTS9Cb3bpZLCbdJo4oLR8km2nJR0yWoJW1PbU2NJajnUS2yu1oiW7qcBPGZX4c3I3R+rhhg==",
+  "dgSpecHash": "kntttMxepZ2lR8YQPVtjjzxQrvajrH1JFKmoCmJREtDGnlWPS1c3Hb20ai73Ffi2xn3NaQulJ+JkI3WvEyWZmA==",
   "success": true,
   "projectFilePath": "C:\\Users\\USERS\\source\\repos\\Exercicios\\Exercicios\\Exercicios.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\USERS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\USERS\\.nuget\\packages\\microsoft.odata.edm\\7.9.4\\microsoft.odata.edm.7.9.4.nupkg.sha512",
+    "C:\\Users\\USERS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+    "C:\\Users\\USERS\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\USERS\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512",
     "C:\\Users\\USERS\\.nuget\\packages\\unity\\5.11.10\\unity.5.11.10.nupkg.sha512"
   ],
   "logs": []

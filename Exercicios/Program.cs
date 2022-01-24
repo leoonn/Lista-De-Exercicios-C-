@@ -15,7 +15,7 @@ namespace Exercises
     {
         static void Main()
         {
-            new Exercise().Exercise8();
+            new Exercise().Exercise10();
         }
     }
     class Exercise
@@ -355,7 +355,7 @@ namespace Exercises
             double result = circle.Area();
             Console.WriteLine(result.ToString("F2", CultureInfo.InvariantCulture) + " " + color);
         }
-        public void Exercise7()
+        public void Exercise7() //Exercicio para reforçar conceitos de polimorfismo
         {
             List<Product> products = new List<Product>();
             Console.WriteLine("Digite quantos produtos voce deseja cadastrar");
@@ -379,7 +379,7 @@ namespace Exercises
                     case 'u':
                         Console.WriteLine("Digite a data de fabricação do produto");
                         DateTime date = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                        products.Add(new UsedProduct(name, price,date));
+                        products.Add(new UsedProduct(name, price, date));
                         break;
                     case 'i':
                         Console.WriteLine("Adicione o valor da taxa alfandegaria");
@@ -395,7 +395,8 @@ namespace Exercises
                 Console.WriteLine(item.PriceTag());
             }
         }  //Exercicio simples para reforçar conceitos de polimorfismo
-        public void Exercise8() {
+        public void Exercise8() //Exercicio para reforçar conceitos de polimorfismo
+        {
             List<Contribuinte> list = new List<Contribuinte>();
             Console.WriteLine("Enter the number of tax payers: ");
             int n = int.Parse(Console.ReadLine());
@@ -408,7 +409,7 @@ namespace Exercises
                 string Name = Console.ReadLine();
                 Console.WriteLine("Enter with Income");
                 double income = double.Parse(Console.ReadLine());
-                if(ch ==  'i')
+                if (ch == 'i')
                 {
                     Console.WriteLine("Enter with health spends");
                     double spend = double.Parse(Console.ReadLine());
@@ -426,10 +427,73 @@ namespace Exercises
             double total = 0;
             foreach (Contribuinte item in list)
             {
-                Console.WriteLine(item.Name  +" $" +  item.Calculate().ToString("F2"), CultureInfo.InvariantCulture );
+                Console.WriteLine(item.Name + " $" + item.Calculate().ToString("F2"), CultureInfo.InvariantCulture);
                 total += item.Calculate();
             }
-            Console.WriteLine("total payment" +  total);
+            Console.WriteLine("total payment" + total);
+        }
+        public void Exercise9()  // todos os numeros de 4 digitos que retorna 21
+        {
+            int result = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 1; j < 10; j++)
+                {
+                    for (int k = 2; k < 10; k++)
+                    {
+                        for (int l = 3; l < 10; l++)
+                        {
+                            result = i + j + k + l;
+                            if(result  ==  21)
+                            {
+                                Console.WriteLine("Numbers: " + i+ "+"+ j + "+"+ k + "+"+ l + "=" + result);
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        public void Exercise10() // decompondo  numeros mercado livre
+        {
+            int a = int.Parse(Console.ReadLine());
+            List<string> result = new List<string>();
+            for (int i = 0; i <= a; i++)
+            {
+                for (int j = 1; j <= a; j++)
+                {
+                    for (int k = 2; k <= a; k++)
+                    {
+                        for (int l = 3; l <= a; l++)
+                        {
+                            string concat = i + "" + j + "" + k + "" + l + "";
+                            result.Add(concat);
+                        }
+                    }
+                }
+            }
+
+
+            foreach (string s in result)
+            {
+                int b = 0;
+                List<int> numbers = new List<int>();
+                foreach (char lenght in s)
+                {
+                    numbers.Add(int.Parse(lenght.ToString()));
+                }
+                foreach (int number in numbers)
+                {
+                    b += number;
+                    
+                }
+                if(b ==21)
+                {
+                    Console.WriteLine(int.Parse(s));
+                }
+                
+            }
         }
     }
 }
