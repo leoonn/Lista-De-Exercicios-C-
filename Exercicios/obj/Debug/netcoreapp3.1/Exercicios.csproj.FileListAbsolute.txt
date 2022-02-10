@@ -14,3 +14,19 @@ C:\Users\USERS\source\repos\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Unity.
 C:\Users\USERS\source\repos\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.csproj.CopyComplete
 C:\Users\USERS\source\repos\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Microsoft.OData.Edm.dll
 C:\Users\USERS\source\repos\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Exercicios.exe
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Exercicios.deps.json
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Exercicios.runtimeconfig.json
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Exercicios.runtimeconfig.dev.json
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Exercicios.dll
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Exercicios.pdb
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Microsoft.OData.Edm.dll
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Unity.Abstractions.dll
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Unity.Container.dll
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.csprojAssemblyReference.cache
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.AssemblyInfoInputs.cache
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.AssemblyInfo.cs
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.csproj.CopyComplete
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.dll
+C:\Users\USERS\OneDrive\Documentos\GitHub\VisualStudio Projects\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.pdb

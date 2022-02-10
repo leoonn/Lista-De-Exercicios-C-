@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace Exercises
     {
         static void Main()
         {
-            new Exercise().Exercise10();
+            new Exercise().Medindo();
         }
     }
     class Exercise
@@ -455,17 +456,17 @@ namespace Exercises
             }
         }
 
-        public void Exercise10() // decompondo  numeros mercado livre
+        public void Exercise10() // decompondo  numeros mercado livre hacker rank
         {
             int a = int.Parse(Console.ReadLine());
             List<string> result = new List<string>();
             for (int i = 0; i <= a; i++)
             {
-                for (int j = 1; j <= a; j++)
+                for (int j = 0; j <= a; j++)
                 {
-                    for (int k = 2; k <= a; k++)
+                    for (int k = 0; k <= a; k++)
                     {
-                        for (int l = 3; l <= a; l++)
+                        for (int l = 0; l <= a; l++)
                         {
                             string concat = i + "" + j + "" + k + "" + l + "";
                             result.Add(concat);
@@ -494,6 +495,91 @@ namespace Exercises
                 }
                 
             }
+        }
+
+        public void RespostaBrainlyIniciaisDosNomes(){
+            Console.WriteLine("Digite seu nome completo");//Escreve na tela 
+            string name = Console.ReadLine();  //Entrada do usuario ou pode fazer com uma string previamente criada ex: string s = "Leonardo Moreira Luiz"
+            string [] CutName = name.Split(' '); //Separa as string em substrings por espaços entao o vetor[0] seria igual a Leonardo o vetor[1] seria Moreira e assim vai
+            string letters = ""; //Declaração da string que vai receber a junção das letras
+            foreach (string names in CutName) //Loop para percorrer o vetor de nomes separados um de cada vez
+            {
+                letters = letters + names[0].ToString().ToUpper();// concatena as letras e transforma elas em maiusculas uma de cada vez 
+            }
+            Console.WriteLine(letters);
+        }
+        
+    public void BinarySearch(int Number, List<int> list)
+    {
+            
+        double leftPoint = 0;
+        double rightPoint = list.Count - 1;
+
+        while (leftPoint < rightPoint)
+        {
+            var middlePoint = Math.Round((leftPoint + rightPoint) / 2, MidpointRounding.ToZero);
+            int guess = list[(int)middlePoint];
+                
+            if (guess == Number)
+            {
+                Console.WriteLine("Palpite"+ guess);
+                    return;
+            }
+
+            if (guess > Number)
+            { 
+                    rightPoint = middlePoint--;
+                    Console.Write("Palpite" + guess);
+                    Console.WriteLine(" Muito alto "); 
+                    
+                }
+            else
+            {
+                    leftPoint = middlePoint++;
+                    Console.Write("Palpite" + guess);
+                    Console.WriteLine(" Muito Baixo ");
+                    
+                }
+        }
+
+    }
+      public void Medindo()
+        {
+            //Medindo qual é mais rapido busca binaria ou Find de uma lista
+            var sw = new Stopwatch();
+            List<int> numbers = new List<int>();
+            for (int i = 0; i < 1000000; i++)
+            {
+                numbers.Add(i);
+            }
+            int UserNumber = 3000;
+            sw.Start();
+            new Exercise().BinarySearch(UserNumber, numbers);
+            sw.Stop();
+            int swBinary = int.Parse(sw.ElapsedMilliseconds.ToString());
+            Console.WriteLine("Tempo gasto : " + sw.Elapsed.Milliseconds + " milesegundos");
+            
+            sw.Start();
+            int result = numbers.Find(obj => obj == numbers[UserNumber]);
+            Console.WriteLine(result + "Result");
+            sw.Stop();
+            int swFind= int.Parse(sw.ElapsedMilliseconds.ToString());
+            Console.WriteLine("Tempo gasto : " + swFind + " milesegundos");
+            
+            sw.Start();
+            foreach (int item in numbers)
+            {
+                if(item == UserNumber)
+                {
+                    Console.WriteLine(result + "Result");
+                    break;
+                }
+            }
+           
+            sw.Stop();
+            int swFind2 = int.Parse(sw.ElapsedMilliseconds.ToString());
+            Console.WriteLine("Tempo gasto : " + swFind2 + " milesegundos");
+          
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kntttMxepZ2lR8YQPVtjjzxQrvajrH1JFKmoCmJREtDGnlWPS1c3Hb20ai73Ffi2xn3NaQulJ+JkI3WvEyWZmA==",
+  "dgSpecHash": "xktfsvjqw2e6sGAtQXVyjveq8DXCEr+JcfsRET2P4XqXPXpcBnkaR2dNtFVYxpi1AvcBC7rvT3/E4XU8+B5BDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USERS\\source\\repos\\Exercicios\\Exercicios\\Exercicios.csproj",
+  "projectFilePath": "C:\\Users\\USERS\\OneDrive\\Documentos\\GitHub\\VisualStudio Projects\\Exercicios\\Exercicios\\Exercicios.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USERS\\.nuget\\packages\\microsoft.odata.edm\\7.9.4\\microsoft.odata.edm.7.9.4.nupkg.sha512",
     "C:\\Users\\USERS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",

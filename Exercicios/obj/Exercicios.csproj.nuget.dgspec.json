@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USERS\\source\\repos\\Exercicios\\Exercicios\\Exercicios.csproj": {}
+    "C:\\Users\\USERS\\OneDrive\\Documentos\\GitHub\\VisualStudio Projects\\Exercicios\\Exercicios\\Exercicios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USERS\\source\\repos\\Exercicios\\Exercicios\\Exercicios.csproj": {
+    "C:\\Users\\USERS\\OneDrive\\Documentos\\GitHub\\VisualStudio Projects\\Exercicios\\Exercicios\\Exercicios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USERS\\source\\repos\\Exercicios\\Exercicios\\Exercicios.csproj",
+        "projectUniqueName": "C:\\Users\\USERS\\OneDrive\\Documentos\\GitHub\\VisualStudio Projects\\Exercicios\\Exercicios\\Exercicios.csproj",
         "projectName": "Exercicios",
-        "projectPath": "C:\\Users\\USERS\\source\\repos\\Exercicios\\Exercicios\\Exercicios.csproj",
+        "projectPath": "C:\\Users\\USERS\\OneDrive\\Documentos\\GitHub\\VisualStudio Projects\\Exercicios\\Exercicios\\Exercicios.csproj",
         "packagesPath": "C:\\Users\\USERS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USERS\\source\\repos\\Exercicios\\Exercicios\\obj\\",
+        "outputPath": "C:\\Users\\USERS\\OneDrive\\Documentos\\GitHub\\VisualStudio Projects\\Exercicios\\Exercicios\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USERS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
