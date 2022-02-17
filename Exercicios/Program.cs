@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using Exercicios.Entities.AbstractExercise.Q1;
 using Exercicios.Entities.AbstractExercise.Q2;
@@ -16,7 +17,7 @@ namespace Exercises
     {
         static void Main()
         {
-            new Exercise().Medindo();
+            new Exercise().Encript("230698leo");
         }
     }
     class Exercise
@@ -580,6 +581,29 @@ namespace Exercises
             int swFind2 = int.Parse(sw.ElapsedMilliseconds.ToString());
             Console.WriteLine("Tempo gasto : " + swFind2 + " milesegundos");
           
+        }
+        public void HashSha1(string text)
+        {
+            var sha = new SHA1CryptoServiceProvider();
+            byte[] Criptography = sha.ComputeHash(Encoding.Default.GetBytes(text));
+            StringBuilder ecriptText = new StringBuilder();
+            for (int i = 0; i < Criptography.Length; i++)
+            {
+                ecriptText.Append(Criptography[i].ToString("x2"));
+            }
+            Console.WriteLine(ecriptText.ToString()); 
+        }
+
+        public void Encript(string text)
+        {
+            MD5 md5Hash = MD5.Create();
+            byte[] Criptography = md5Hash.ComputeHash(Encoding.Default.GetBytes(text));
+            StringBuilder ecriptText = new StringBuilder();
+            for (int i = 0; i < Criptography.Length; i++)
+            {
+                ecriptText.Append(Criptography[i].ToString("x2"));
+            }
+            Console.WriteLine(ecriptText.ToString()); 
         }
     }
 }
