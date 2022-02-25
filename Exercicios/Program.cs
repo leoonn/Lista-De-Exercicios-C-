@@ -17,7 +17,7 @@ namespace Exercises
     {
         static void Main()
         {
-            new Exercise().Encript("230698leo");
+            new Exercise().BrainlyExerciseMatriz();
         }
     }
     class Exercise
@@ -604,6 +604,41 @@ namespace Exercises
                 ecriptText.Append(Criptography[i].ToString("x2"));
             }
             Console.WriteLine(ecriptText.ToString()); 
+        } 
+        public void BrainlyExerciseVetor()
+        {
+            int[] A = new int[18];
+            int[] B = new int[A.Length];
+            for (int i = 0; i < A.Length; i++)
+            {
+                Console.WriteLine("Digite o valor da posição " + i);
+                A[i] = int.Parse(Console.ReadLine());
+                B[i] = A[i] / 5;
+            }
+            for (int i = 0; i < B.Length; i++)
+            {
+                Console.Write($" {B[i]} ");
+            }                               
+        }
+        public void BrainlyExerciseMatriz()
+        {
+            double[,] matriz = new double[15,3];
+            Random random = new Random();
+            for (int i = 0; i < 15; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.WriteLine($"Digite a nota {j} do aluno {i}");
+                    matriz[i, j] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    //matriz[i, j] = random.Next(0 , 10);
+                    Console.WriteLine($"a nota {j} do aluno {i} é: {matriz[i,j]}");
+                    if(j == 2)
+                    {
+                        double result = (matriz[i, 0] + matriz[i, 1] + matriz[i, 2]) / 3;
+                        Console.WriteLine($"A média do aluno {i} é: {result.ToString("F2")}");
+                    }                                       
+                }               
+            }          
         }
     }
 }
