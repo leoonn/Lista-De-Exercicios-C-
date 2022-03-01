@@ -17,7 +17,7 @@ namespace Exercises
     {
         static void Main()
         {
-            new Exercise().BrainlyExerciseMatriz();
+            new Exercise().HackerRankStrongPassword("thisishandsome");
         }
     }
     class Exercise
@@ -639,6 +639,47 @@ namespace Exercises
                     }                                       
                 }               
             }          
+        }
+        public void BrainlyWriteNumbers()
+        {
+            for (int i = 1; i <= 50; i++)
+            {
+                Console.WriteLine($"Number: {i}");
+            }
+        }
+        public void HackerRankStrongPassword(string password)
+        {    // 1 2  3 4 5 6
+            //thisisbeuatiful
+            int count = 0;
+            string vogais = "aeiou";
+            for (int i = 0; i < password.Length; i++)
+            {              
+                for (int j = 1; j < password.Length; j++)
+                {
+                    for (int k = 2; k < password.Length; k++)
+                    {
+                        for (int l = 3; l < password.Length; l++)
+                        {
+                            if(vogais.Contains(password[i]))
+                            {
+                                Console.WriteLine(password[i]);
+                                if (!vogais.Contains(password[j]) || !vogais.Contains(password[k]) || !vogais.Contains(password[l]))
+                                {
+                                    count++;
+                                    i++;
+                                }
+                                break;
+                            }
+                        }
+                        break;
+                    }
+                    break;
+                }
+              
+            }
+            Console.WriteLine(count);
+
+
         }
     }
 }
